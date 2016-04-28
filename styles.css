@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Petit+Formal+Script);
+/*main elements */
+	body{
+	background:#DBCEB8;
+	color:#423D37;
+}
+	.wrapper {
+	margin: 0 auto;
+	max-width: 80rem;
+	display:flex;
+	
+	}
+/*Section Main */
+	.mainIntro{
+	border:8px;	
+	border-color:black;
+	}
+	
+	.topTitle{
+		font-family: 'Petit Formal Script', cursive;
+		text-align:center;
+	}
+	
+	.subTitle{
+		font-family: 'Petit Formal Script', cursive;
+		font-weight:heavy;
+		text-align:center;
+	}
+	
+	.imgPlace{
+		align-self:center;
+		
+		
+	}	
+	
+	.mainNav li, a {
+		color:green;
+	}
+/*Aside Main*/	
+	.mainWelcome{
+	
+	
+	}
+	
+	.welcomeP{
+	
+	}
+	
+	.background{
+	
+	
+	}
+	
+/* footer Main */
+	
+	.footerMain{
+		order:4;
+		align-self:flex-end;
+		flex-grow:4;
+	}	
+	
+/*Media queries*/
+
+/*aside*/
+#map{
+height:100%;
+}
+
+
+
