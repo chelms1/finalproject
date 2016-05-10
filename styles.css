@@ -280,9 +280,9 @@
 		display: flex;
 		margin-left: auto;
 		margin-right: auto;
-		width: 10%;
-		height: 20%;
-		top:-50%;
+		width: 20%;
+		height: 30%;
+		top:50%;
 	}	
 	.PhotoNav{
 		list-style:none;
@@ -304,6 +304,16 @@
 	
 	.PhotoNav li .photoTab{
 	color:gold;
+	}
+	a.twitter-timeline{
+		display: flex;
+		}
+		
+	iframe[id^='twitter-widget-']{ 
+		display:flex !important;
+		flex-wrap:wrap !important;
+		width:56% !important;
+		margin-left:22% !important;
 	}
 
 /*Aside Photos*/	
@@ -382,6 +392,12 @@
 	.RSVPTitle{
 		text-align:center;
 	}
+	#map {
+        width: 10em;
+        height: 10em;
+		margin-left: auto;
+		margin-right: auto;		
+      }
 
 	
 /*Media queries*/
@@ -471,9 +487,7 @@
   
 
 /*aside*/
-#map{
-height:100%;
-}
+
 
 
 
