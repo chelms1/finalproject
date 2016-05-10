@@ -161,14 +161,11 @@
 	.tellStory h3{
 		text-align:center;
 	}
-	}
 	/*Details */
 	.ourWedding{
 		border:8px;	
 		border-color:black;
 	}
-	
-	
 	.imagePlan{
 		display: flex;
 		margin-left: auto;
@@ -220,7 +217,172 @@
 	.detailh3{
 		text-align:center;
 	}
+
+
+	/*Registration */
+	
+	.imageReg{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 20%;
+		height: 30%;
+		top:-50%;
+	}	
+	.RegNav{
+		list-style:none;
+		text-align:center;
 	}
+	.RegNav   li a {
+		color:#FFE3CD;
+		text-decoration:none;
+		display:inline-block;
+		padding:8px;
+		margin:0px 3% 0 0;
+
+	}
+	.RegNav  li {
+		display:inline;
+		list-style-type: none;
+		color:#FFE3CD;
+	}
+	
+	.RegNav li .regTab{
+	color:gold;
+	}
+
+/*Aside Registration*/	
+	.RegContent{
+		display:flex;
+		text-align:center;
+		flex-wrap:wrap;
+		flex-direction:column;
+	
+	}
+	.SubH1 {
+		font-family: 'Petit Formal Script', cursive;
+		text-align:center;
+	}
+	
+	.RegP{
+		text-align:center;
+		width:30%;
+		margin:auto;
+	}
+	.RegTitle{
+		text-align:center;
+	}
+
+	/*Photos */
+	
+	
+	.imagePhoto{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 10%;
+		height: 20%;
+		top:-50%;
+	}	
+	.PhotoNav{
+		list-style:none;
+		text-align:center;
+	}
+	.PhotoNav   li a {
+		color:#FFE3CD;
+		text-decoration:none;
+		display:inline-block;
+		padding:8px;
+		margin:0px 3% 0 0;
+
+	}
+	.PhotoNav  li {
+		display:inline;
+		list-style-type: none;
+		color:#FFE3CD;
+	}
+	
+	.PhotoNav li .photoTab{
+	color:gold;
+	}
+
+/*Aside Photos*/	
+	.photoContent{
+		display:flex;
+		text-align:center;
+		flex-wrap:wrap;
+		flex-direction:column;
+	
+	}
+	.SubH1 {
+		font-family: 'Petit Formal Script', cursive;
+		text-align:center;
+	}
+	
+	.PhotoP{
+		text-align:center;
+		width:30%;
+		margin:auto;
+	}
+	.PhotoTitle{
+		text-align:center;
+	}
+
+		/*RSVP */
+	
+	
+	.imageRSVP{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 20%;
+		height: 10%;
+		top:-50%;
+	}	
+	.RSVPNav{
+		list-style:none;
+		text-align:center;
+	}
+	.RSVPNav   li a {
+		color:#FFE3CD;
+		text-decoration:none;
+		display:inline-block;
+		padding:8px;
+		margin:0px 3% 0 0;
+
+	}
+	.RSVPNav  li {
+		display:inline;
+		list-style-type: none;
+		color:#FFE3CD;
+	}
+	
+	.RSVPNav li .RSVPTab{
+	color:gold;
+	}
+
+/*Aside RSVP*/	
+	.RSVPContent{
+		display:flex;
+		text-align:center;
+		flex-wrap:wrap;
+		flex-direction:column;
+	
+	}
+	.SubH1 {
+		font-family: 'Petit Formal Script', cursive;
+		text-align:center;
+	}
+	
+	.RSVPp{
+		text-align:center;
+		width:30%;
+		margin:auto;
+	}
+	.RSVPTitle{
+		text-align:center;
+	}
+
 	
 /*Media queries*/
 
