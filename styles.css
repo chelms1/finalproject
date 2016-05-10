@@ -1,13 +1,33 @@
 @import url(https://fonts.googleapis.com/css?family=Petit+Formal+Script);
+
+*/{
+	background-image: url("background.jpg");
+	background-color: #DBCEB8;
+	background-repeat:no-repeat;
+	display:flex;
+	
+
+}
+
+
+
 /*main elements */
+
 	body{
-	background:#DBCEB8;
+	background-image: url("background.jpg");
+	background-position:center;
+	background-color: #DBCEB8;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
 	color:#423D37;
+	
 }
 	.wrapper {
 	margin: 0 auto;
-	max-width: 80rem;
+	max-width: 10 0rem;
 	display:flex;
+	align-items: center;
+	justify-content: center;
 	
 	}
 /*Section Main */
@@ -19,37 +39,60 @@
 	.topTitle{
 		font-family: 'Petit Formal Script', cursive;
 		text-align:center;
+		line-height:10px;
+		color:#DBCEB8;
 	}
 	
 	.subTitle{
 		font-family: 'Petit Formal Script', cursive;
 		font-weight:heavy;
 		text-align:center;
+		line-height:10px;
 	}
 	
-	.imgPlace{
-		align-self:center;
-		
-		
+	.imagePlace {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		height: 10%;
+		top:-50%;
 	}	
-	
-	.mainNav li, a {
-		color:green;
+	.mainNav{
+		list-style:none;
+		text-align:center;
+	}
+	.mainNav   li a {
+		color:#FFE3CD;
+		text-decoration:none;
+		display:inline-block;
+		padding:8px;
+		margin:0px 3% 0 0;
+
+	}
+	.mainNav  li {
+		display:inline;
+		list-style-type: none;
+		color:#FFE3CD;
 	}
 /*Aside Main*/	
 	.mainWelcome{
+		display:flex;
+		text-align:center;
+		flex-wrap:wrap;
+		flex-direction:column;
 	
-	
+	}
+	.mainWelcome h3{
+		text-align:center;
 	}
 	
 	.welcomeP{
-	
+		text-align:center;
+		width:30%;
+		margin:auto;
 	}
 	
-	.background{
-	
-	
-	}
 	
 /* footer Main */
 	
@@ -59,7 +102,211 @@
 		flex-grow:4;
 	}	
 	
+	
+/*Our Wedding */
+	.ourWedding{
+		border:8px;	
+		border-color:black;
+	}
+	
+	
+	.imageProp{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 20%;
+		height: 30%;
+		top:-50%;
+	}	
+	.OwNav{
+		list-style:none;
+		text-align:center;
+	}
+	.OwNav   li a {
+		color:#FFE3CD;
+		text-decoration:none;
+		display:inline-block;
+		padding:8px;
+		margin:0px 3% 0 0;
+
+	}
+	.OwNav  li {
+		display:inline;
+		list-style-type: none;
+		color:#FFE3CD;
+	}
+	
+	.OwNav li .weddTab{
+	color:gold;
+	}
+
+/*Aside Story*/	
+	.mainStory{
+		display:flex;
+		text-align:center;
+		flex-wrap:wrap;
+		flex-direction:column;
+	
+	}
+	.SubH1 {
+		font-family: 'Petit Formal Script', cursive;
+		text-align:center;
+	}
+	
+	.theHow{
+		text-align:center;
+		width:30%;
+		margin:auto;
+	}
+	.tellStory h3{
+		text-align:center;
+	}
+	}
+	/*Details */
+	.ourWedding{
+		border:8px;	
+		border-color:black;
+	}
+	
+	
+	.imagePlan{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 40%;
+		height: 30%;
+		top:-50%;
+	}	
+	.DetailNav{
+		list-style:none;
+		text-align:center;
+	}
+	.DetailNav   li a {
+		color:#FFE3CD;
+		text-decoration:none;
+		display:inline-block;
+		padding:8px;
+		margin:0px 3% 0 0;
+
+	}
+	.DetailNav  li {
+		display:inline;
+		list-style-type: none;
+		color:#FFE3CD;
+	}
+	
+	.DetailNav li .detailTab{
+	color:gold;
+	}
+
+/*Aside Details*/	
+	.deets{
+		display:flex;
+		text-align:center;
+		flex-wrap:wrap;
+		flex-direction:column;
+	
+	}
+	.SubH1 {
+		font-family: 'Petit Formal Script', cursive;
+		text-align:center;
+	}
+	
+	.detailP{
+		text-align:center;
+		width:30%;
+		margin:auto;
+	}
+	.detailh3{
+		text-align:center;
+	}
+	}
+	
 /*Media queries*/
+
+@media only screen and (max-device-width : 320px) {
+
+/*Section Main */
+	.mainIntro{
+		display:flex;
+		flex-wrap:wrap;
+		flex-direction:column;
+	}
+	
+	.topTitle{
+		font-size:1em;
+		font-family: 'Petit Formal Script', cursive;
+		text-align:center;
+		line-height:10px;
+		color:#DBCEB8;
+	}
+	
+	.subTitle{
+		font-family: 'Petit Formal Script', cursive;
+		font-weight:heavy;
+		text-align:center;
+		line-height:10px;
+	}
+	
+	.imagePlace {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		height: 10%;
+		top:-50%;
+	}	
+	.mainNav{
+		list-style:none;
+		text-align:center;
+	}
+	.mainNav   li a {
+		color:#FFE3CD;
+		text-decoration:none;
+		display:inline-block;
+		padding:8px;
+		margin:0px 3% 0 0;
+
+	}
+	.mainNav  li {
+		display:inline;
+		list-style-type: none;
+		color:#FFE3CD;
+	}
+
+/*Aside Main*/	
+	.mainWelcome{
+		display:flex;
+		text-align:center;
+		flex-wrap:wrap;
+		flex-direction:column;
+	
+	}
+	.mainWelcome h3{
+		text-align:center;
+	}
+	
+	.welcomeP{
+		text-align:center;
+		width:30%;
+		margin:auto;
+	}
+  .facet_sidebar {
+    display: none;
+  }
+  }
+    @media only screen and (min-width : 321px) {
+  .facet_sidebar {
+    display: none;
+  }
+  }
+  @media only screen and (max-width:  768px) {
+  .facet_sidebar {
+    display: none;
+  }
+  }
+
+  
 
 /*aside*/
 #map{
