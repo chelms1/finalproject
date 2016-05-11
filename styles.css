@@ -272,6 +272,81 @@
 	.RegTitle{
 		text-align:center;
 	}
+	
+	.donation{
+	display:flex;
+	flex-wrap:wrap;
+	text-align: center;
+	margin:5% 0%;
+	position:relative;
+	width: 20%;
+	text-align:center;
+	margin: 0 auto;
+	border-radius:7px;
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	-o-border-radius:7px;
+	padding-bottom: 3px;
+	}
+	.personal{
+	display:flex;
+	 border-top-left-radius:7px;
+	-webkit-border-top-left-radius:7px;
+	-moz-border-top-left-radius:7px;
+	-o-border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	-webkit-border-top-right-radius:7px;
+	-moz-border-top-right-radius:7px;
+	-o-border-top-right-radius:7px;
+	text-align: center;
+	padding:1.6em 0;
+	border: 1px solid rgba(0, 0, 0, 0.37);
+	box-shadow: 0px 4px 10px 0px rgba(1, 3, 12, 0.33);
+	-webkit-box-shadow: 0px 4px 10px 0px rgba(1, 3, 12, 0.33);
+	-o-	box-shadow: 0px 4px 10px 0px rgba(1, 3, 12, 0.33);
+	-moz-box-shadow: 0px 4px 10px 0px rgba(1, 3, 12, 0.33);
+	position: relative;
+	}
+	.topForm{
+	display:flex;
+	aling-self:center;
+	background: url(../images/user-icon.png) no-repeat -5px -6px;
+	position: absolute;
+	left:50%;
+	}
+	form input{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	font-size: 1em;
+	outline: none;
+	font-weight: 600;
+	color:#8D8E8F;
+	padding: 12px 12px;
+	width:76%;
+	border-top:1px solid #090B0D;
+	border-right:2px solid #424549;
+	border-bottom:2px solid #424549;
+	border-left:1px solid #090B0D;
+	margin: 10px;
+	border-radius:10px;
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	-o-border-radius:7px;
+	background: #13161B;
+	box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+	-webkit-box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+	-o-box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+	-moz-box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+	font-family: 'Raleway', sans-serif;
+
+}
+	form input[type="text"]:hover,form input[type="date"]:hover,form input[type="email"]:hover,form input[type="url"]:hover,form input[type="tel"]:hover{
+	box-shadow: 0 0 1em #B76E79;
+	-webkit-box-shadow: 0 0 1em #B76E79;
+	-o-box-shadow: 0 0 1em #B76E79;
+	-moz-box-shadow: 0 0 1em #B76E79;
+}
 
 	/*Photos */
 	
@@ -393,8 +468,8 @@
 		text-align:center;
 	}
 	#map {
-        width: 10em;
-        height: 10em;
+        width: 15em;
+        height: 15em;
 		margin-left: auto;
 		margin-right: auto;		
       }

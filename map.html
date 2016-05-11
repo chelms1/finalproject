@@ -18,13 +18,67 @@
   <body>
     <div id="map"></div>
     <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
+	var map;
+	var BedBathPos = {lat:38.9288751, lng: -94.7838647};
+
+	function initMap() {
+	  map = new google.maps.Map(document.getElementById('map'), {
+		center: {lat: 38.9168474, lng: -94.824447},
+		zoom: 10
+	  });
+	 var marker = new google.maps.Marker({
+    position: BedBathPos,
+    map: map,
+	title:'Hello World'
+  });
+}
+
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+	var BedBathPos = {lat:38.9288751, lng: -94.7838647};
+
+    var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&sensor=false";
+    document.getElementById("map").innerHTML = "<img src='"+img_url+"'>";
+}
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = initMap();
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = initMap();
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = initMap();
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = initMap();
+            break;
+    }
+}
+getLocation();
+
+	var map;
+	function initMap() {
+	  map = new google.maps.Map(document.getElementById('map'), {
+		center: {lat: 38.9168474, lng: -94.824447},
+		zoom: 8
+	  });
+	}
+
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpkB-ilSu3s8-WcqIkoMA6arOoU5riNFM&callback=initMap"
     async defer></script>
