@@ -138,60 +138,63 @@
 			<p class="RegP">There are so many beautiful destinations out there and what better way to visit them than with your recently married Signification
 			other. We are wanting to try and take a cruise something Taylor nor I have done before. There is so much of the world to see and we are 
 			hoping this will be a thrilling experience for us. We appreciate any help getting us there. If you want to help us sail away check out the
-			donations form.</p>
-	<form class="donation">
-		<fieldset class="personal">
-			<legend class="topForm">k</legend>
-			        <label>First Name
-					<input type="text" placeholder="First Name" value="First Name" onfocus="this.value = '';" 
-					onblur="if (this.value == '') {this.value = 'First Name';}"> 
-					</label>
-					<label>Last Name
-					<input type="text" placeholder="Last Name" value="Last Name" onfocus="this.value = '';" 
-					onblur="if (this.value == '') {this.value = 'Last Name';}" > 
-					</label>
-					<label>Date of Birth
-					<input type="date" value="date"
-					onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'date';}">
-					</label>
-					<label>Email 
-					<input type="email" placeholder="example@domain.com" value="Email Address"
-					onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}">
-					</label>  
-					<label>URL 
-					<input type="url" placeholder="http://mysite.com"value="Email Address"
-					onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}">
-					</label> 
-					<label>Telephone 
-					<input type="tel" placeholder="Eg. +447000 000000" value="Eg. +447000 000000"
-					onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Eg. +447000 000000';}">
-					</label> 
-		</fieldset>
-		<fieldset> 
-				<legend>Billing address</legend>  
-					<label>Address 
-					<textarea id="address" name="address" rows=5 required></textarea>
-					</label> 
-					<label>Post code 
-					<input id="postCode" name="postCode" type="text" required>
-					</label> 
-					<label>Country 
-					<input id="country" name="country" list="country-names" type="text" required> 
-					<datalist id="country-names"> 
-						<option label="England" value="England"></option> 
-						<option label="Northern Ireland" value="Northern Ireland"></option> 
-						<option label="Ireland" value="Ireland"></option> 
-						<option label="Scotland" value="Scotland"></option> 
-						<option label="Wales" value="Wales"></option> 
-					</datalist>
-					</label> 
-			</fieldset>
-		</form>
-				<div id="map"></div>
-		<p id="demo"></p>
-					<script src="wedding.js"></script>
-					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpkB-ilSu3s8-WcqIkoMA6arOoU5riNFM&callback=initMap"
-					async defer></script>
+			donations form.</p><br>
+			
+			<form action="" method="POST" class="donation">
+				<fieldset class="personal">
+					<legend class="topForm">Information so we can Thank you!</legend>
+							<label>First Name
+							<input type="text" placeholder="First Name" style="text-transform: capitalize;"> 
+							</label>
+							<label>Last Name
+							<input type="text" placeholder="Last Name" style="text-transform: capitalize;"> 
+							</label>
+							<label>Email 
+							<input type="email" placeholder="example@domain.com">
+							</label>  
+							<label>Telephone 
+							<input type="tel" placeholder="Eg. +447000 000000">
+							</label> 
+				</fieldset>
+				<fieldset> 
+
+							<div> 
+								<legend>Card details</legend>  
+								<label>Name
+								<input id="cardName" name="cardName"  style="text-transform: capitalize;" type="text" placeholder="Name as it appears on your card" required>
+								</label>  
+								<label>Card number 
+								<input id="cardNo" name="cardNo" type="number" required title="The sixteen digit number across the middle of your card."> 
+								</label>
+								<label>Security code 
+								<input id="security" name="security" type="number" required pattern="[0-9]{3}" title="The last three digits on the back of your card.">
+								</label> 
+								<label>Expiry Date 
+								<input id="expiry" name="expiry" type="month">
+								</label>
+								<label>Select Card Type
+								<input id="cards" name="cards" list="card-type" type="text" required> 
+								<datalist id="card-type"> 
+									<option label="Visa" id="visa" name="cardtype" value="Visa"></option> 
+									<option label="Mastercard" id="mastercard" name="cardtype" value="Mastercard"></option> 
+									<option label="Amex" id="amex" name="cardtype" value="Amex"></option> 
+									<option label="Discover" id="discover" name="cardtype" value="Discover"></option> 
+								</datalist>
+								</label>
+							</div>
+			</fieldset> 
+			<fieldset> 
+			<div> 
+				<button type="submit" class="submit" value="Submit Payment">Submit</button> 
+			</div> 
+		  </fieldset>
+				</form>
+		<p id="demo">Check out where we are registered</p>
+		<div id="map"></div>
+
+				<script src="wedding.js"></script>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpkB-ilSu3s8-WcqIkoMA6arOoU5riNFM&callback=initMap"
+				async defer></script>
 		</aside>
 		
 			<section id="Photos">
@@ -247,17 +250,62 @@
 		</section>
 		<aside class="RSVPContent">
 			<p class="RSVPp">We look forward to seeing you here to celebrate with us. Please let us know through one of the many outlets that you
-			plan on being here with us. It's as easy as cake. Just email us (here) , snail mail it to our address @(), 
-			or facebook attending here()</p><br>
+			plan on being here with us. It's as easy as cake. 
+			Just email us using our <a href="mailto:cierraandtaylorwedding@gmail.com">wedding address</a>
+			or use the form provided.</p><br>
 
 			<p class="RSVPp">If you're unable to attend live feel free to check out our social media feeds to join in the fun and share the love with us!</p><br>
 
-			<p class="RSVPp">We want to make this is easy as possible so if you have any questions or are having trouble with your RSVP contact us or our elected family members 
-			as soon as possible.</p><br>
+			<p class="RSVPp">We want to make this is easy as possible so if you have any questions or are having trouble with your 
+			RSVP <a href="mailto:cierraandtaylorwedding@gmail.com">contact us</a> 
+			or our elected family members as soon as possible.</p><br>
 			
-			<form>
-			
-			</form>
+	<form class="donation">
+		<fieldset class="personal">
+			<legend class="topForm">k</legend>
+			        <label>First Name
+					<input type="text" placeholder="First Name" value="First Name" onfocus="this.value = '';" 
+					onblur="if (this.value == '') {this.value = 'First Name';}"> 
+					</label>
+					<label>Last Name
+					<input type="text" placeholder="Last Name" value="Last Name" onfocus="this.value = '';" 
+					onblur="if (this.value == '') {this.value = 'Last Name';}" > 
+					</label>
+					<label>Today's Date
+					<input type="date" value="date"
+					onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'date';}">
+					</label>
+					<label>Email 
+					<input type="email" placeholder="example@domain.com" value="Email Address"
+					onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}">
+					</label>  
+					<label>Telephone 
+					<input type="tel" placeholder="Eg. +447000 000000" value="Eg. +447000 000000"
+					onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Eg. +447000 000000';}">
+					</label> 
+		</fieldset>
+		<fieldset> 
+				<legend>Billing address</legend>  
+					<label>Attending
+					  <input type="radio" name="attending" value="yes" checked> Yes
+					  <input type="radio" name="attending" value="no"> No<br>
+					  </label>
+					  <br>
+					<label>Extra Notes 
+					<textarea id="address" name="address" rows=5 required></textarea>
+					</label> <br>
+					<label>Number of People 
+					<input id="numberof" name="numberof" list="numberof-people" type="text" required> 
+					<datalist id="numberof-people"> 
+						<option label="+1" value="+1"></option> 
+						<option label="+2" value="+2"></option> 
+						<option label="+3" value="+3"></option> 
+						<option label="+4" value="+4"></option> 
+						<option label="Other" value="Other"></option> 
+					</datalist>
+					</label> 
+			</fieldset>
+		</form>
 	
 					
 		</aside>

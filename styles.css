@@ -272,6 +272,12 @@
 	.RegTitle{
 		text-align:center;
 	}
+	#map {
+        width: 15em;
+        height: 15em;
+		margin-left: auto;
+		margin-right: auto;
+      }
 	
 	.donation{
 	display:flex;
@@ -310,9 +316,6 @@
 	.topForm{
 	display:flex;
 	aling-self:center;
-	background: url(../images/user-icon.png) no-repeat -5px -6px;
-	position: absolute;
-	left:50%;
 	}
 	form input{
 	display:flex;
@@ -478,6 +481,23 @@
 /*Media queries*/
 
 @media only screen and (max-device-width : 320px) {
+/*main elements */
+
+	body{
+	background-image: url("background.jpg");
+	background-position:center;
+	background-color: #DBCEB8;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	color:#423D37;	
+}
+	#wrapper {
+	margin: 0 auto;
+	max-width: 10 0rem;
+	display:flex;
+	align-items: center;
+	justify-content: center;	
+	}
 
 /*Section Main */
 	.mainIntro{
@@ -486,14 +506,19 @@
 		flex-direction:column;
 	}
 	
-	.topTitle{
-		font-size:1em;
+	.topTitle {
 		font-family: 'Petit Formal Script', cursive;
 		text-align:center;
 		line-height:10px;
 		color:#DBCEB8;
 	}
-	
+	.mainIntro .topTitle h1{
+		font-family:cursive;
+		font-size:10em;
+		text-align:center;
+		line-height:10px;
+		color:#DBCEB8;
+	}
 	.subTitle{
 		font-family: 'Petit Formal Script', cursive;
 		font-weight:heavy;
@@ -544,19 +569,396 @@
 		width:30%;
 		margin:auto;
 	}
-  .facet_sidebar {
-    display: none;
-  }
-  }
+
+  
+  /* footer Main */
+	
+	.footerMain{
+		order:4;
+		align-self:flex-end;
+		flex-grow:4;
+	}	
+	
+	
+/*Our Wedding */
+	.ourWedding{
+		border:8px;	
+		border-color:black;
+	}
+	
+	
+	.imageProp{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 20%;
+		height: 30%;
+		top:-50%;
+	}	
+	.OwNav{
+		list-style:none;
+		text-align:center;
+	}
+	.OwNav   li a {
+		color:#FFE3CD;
+		text-decoration:none;
+		display:inline-block;
+		padding:8px;
+		margin:0px 3% 0 0;
+
+	}
+	.OwNav  li {
+		display:inline;
+		list-style-type: none;
+		color:#FFE3CD;
+	}
+	
+	.OwNav li .weddTab{
+	color:gold;
+	}
+
+/*Aside Story*/	
+	.mainStory{
+		display:flex;
+		text-align:center;
+		flex-wrap:wrap;
+		flex-direction:column;
+	
+	}
+	.SubH1 {
+		font-family: 'Petit Formal Script', cursive;
+		text-align:center;
+	}
+	
+	.theHow{
+		text-align:center;
+		width:30%;
+		margin:auto;
+	}
+	.tellStory h3{
+		text-align:center;
+	}
+	/*Details */
+	.ourWedding{
+		border:8px;	
+		border-color:black;
+	}
+	.imagePlan{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 40%;
+		height: 30%;
+		top:-50%;
+	}	
+	.DetailNav{
+		list-style:none;
+		text-align:center;
+	}
+	.DetailNav   li a {
+		color:#FFE3CD;
+		text-decoration:none;
+		display:inline-block;
+		padding:8px;
+		margin:0px 3% 0 0;
+
+	}
+	.DetailNav  li {
+		display:inline;
+		list-style-type: none;
+		color:#FFE3CD;
+	}
+	
+	.DetailNav li .detailTab{
+	color:gold;
+	}
+
+/*Aside Details*/	
+	.deets{
+		display:flex;
+		text-align:center;
+		flex-wrap:wrap;
+		flex-direction:column;
+	
+	}
+	.SubH1 {
+		font-family: 'Petit Formal Script', cursive;
+		text-align:center;
+	}
+	
+	.detailP{
+		text-align:center;
+		width:30%;
+		margin:auto;
+	}
+	.detailh3{
+		text-align:center;
+	}
+
+
+	/*Registration */
+	
+	.imageReg{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 20%;
+		height: 30%;
+		top:-50%;
+	}	
+	.RegNav{
+		list-style:none;
+		text-align:center;
+	}
+	.RegNav   li a {
+		color:#FFE3CD;
+		text-decoration:none;
+		display:inline-block;
+		padding:8px;
+		margin:0px 3% 0 0;
+
+	}
+	.RegNav  li {
+		display:inline;
+		list-style-type: none;
+		color:#FFE3CD;
+	}
+	
+	.RegNav li .regTab{
+	color:gold;
+	}
+
+/*Aside Registration*/	
+	.RegContent{
+		display:flex;
+		text-align:center;
+		flex-wrap:wrap;
+		flex-direction:column;
+	
+	}
+	.SubH1 {
+		font-family: 'Petit Formal Script', cursive;
+		text-align:center;
+	}
+	
+	.RegP{
+		text-align:center;
+		width:30%;
+		margin:auto;
+	}
+	.RegTitle{
+		text-align:center;
+	}
+	#map {
+        width: 15em;
+        height: 15em;
+		margin-left: auto;
+		margin-right: auto;
+      }
+	
+	.donation{
+	display:flex;
+	flex-wrap:wrap;
+	text-align: center;
+	margin:5% 0%;
+	position:relative;
+	width: 20%;
+	text-align:center;
+	margin: 0 auto;
+	border-radius:7px;
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	-o-border-radius:7px;
+	padding-bottom: 3px;
+	}
+	.personal{
+	display:flex;
+	 border-top-left-radius:7px;
+	-webkit-border-top-left-radius:7px;
+	-moz-border-top-left-radius:7px;
+	-o-border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	-webkit-border-top-right-radius:7px;
+	-moz-border-top-right-radius:7px;
+	-o-border-top-right-radius:7px;
+	text-align: center;
+	padding:1.6em 0;
+	border: 1px solid rgba(0, 0, 0, 0.37);
+	box-shadow: 0px 4px 10px 0px rgba(1, 3, 12, 0.33);
+	-webkit-box-shadow: 0px 4px 10px 0px rgba(1, 3, 12, 0.33);
+	-o-	box-shadow: 0px 4px 10px 0px rgba(1, 3, 12, 0.33);
+	-moz-box-shadow: 0px 4px 10px 0px rgba(1, 3, 12, 0.33);
+	position: relative;
+	}
+	.topForm{
+	display:flex;
+	aling-self:center;
+	}
+	form input{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	font-size: 1em;
+	outline: none;
+	font-weight: 600;
+	color:#8D8E8F;
+	padding: 12px 12px;
+	width:76%;
+	border-top:1px solid #090B0D;
+	border-right:2px solid #424549;
+	border-bottom:2px solid #424549;
+	border-left:1px solid #090B0D;
+	margin: 10px;
+	border-radius:10px;
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	-o-border-radius:7px;
+	background: #13161B;
+	box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+	-webkit-box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+	-o-box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+	-moz-box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+	font-family: 'Raleway', sans-serif;
+
+}
+	form input[type="text"]:hover,form input[type="date"]:hover,form input[type="email"]:hover,form input[type="url"]:hover,form input[type="tel"]:hover{
+	box-shadow: 0 0 1em #B76E79;
+	-webkit-box-shadow: 0 0 1em #B76E79;
+	-o-box-shadow: 0 0 1em #B76E79;
+	-moz-box-shadow: 0 0 1em #B76E79;
+}
+
+	/*Photos */
+	
+	
+	.imagePhoto{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 20%;
+		height: 30%;
+		top:50%;
+	}	
+	.PhotoNav{
+		list-style:none;
+		text-align:center;
+	}
+	.PhotoNav   li a {
+		color:#FFE3CD;
+		text-decoration:none;
+		display:inline-block;
+		padding:8px;
+		margin:0px 3% 0 0;
+
+	}
+	.PhotoNav  li {
+		display:inline;
+		list-style-type: none;
+		color:#FFE3CD;
+	}
+	
+	.PhotoNav li .photoTab{
+	color:gold;
+	}
+	a.twitter-timeline{
+		display: flex;
+		}
+		
+	iframe[id^='twitter-widget-']{ 
+		display:flex !important;
+		flex-wrap:wrap !important;
+		width:56% !important;
+		margin-left:22% !important;
+	}
+
+/*Aside Photos*/	
+	.photoContent{
+		display:flex;
+		text-align:center;
+		flex-wrap:wrap;
+		flex-direction:column;
+	
+	}
+	.SubH1 {
+		font-family: 'Petit Formal Script', cursive;
+		text-align:center;
+	}
+	
+	.PhotoP{
+		text-align:center;
+		width:30%;
+		margin:auto;
+	}
+	.PhotoTitle{
+		text-align:center;
+	}
+
+		/*RSVP */
+	
+	
+	.imageRSVP{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 20%;
+		height: 10%;
+		top:-50%;
+	}	
+	.RSVPNav{
+		list-style:none;
+		text-align:center;
+	}
+	.RSVPNav   li a {
+		color:#FFE3CD;
+		text-decoration:none;
+		display:inline-block;
+		padding:8px;
+		margin:0px 3% 0 0;
+
+	}
+	.RSVPNav  li {
+		display:inline;
+		list-style-type: none;
+		color:#FFE3CD;
+	}
+	
+	.RSVPNav li .RSVPTab{
+	color:gold;
+	}
+
+/*Aside RSVP*/	
+	.RSVPContent{
+		display:flex;
+		text-align:center;
+		flex-wrap:wrap;
+		flex-direction:column;
+	
+	}
+	.SubH1 {
+		font-family: 'Petit Formal Script', cursive;
+		text-align:center;
+	}
+	
+	.RSVPp{
+		text-align:center;
+		width:30%;
+		margin:auto;
+	}
+	.RSVPTitle{
+		text-align:center;
+	}
+	#map {
+        width: 15em;
+        height: 15em;
+		margin-left: auto;
+		margin-right: auto;		
+      }
+}
     @media only screen and (min-width : 321px) {
-  .facet_sidebar {
-    display: none;
+
   }
-  }
+ 
   @media only screen and (max-width:  768px) {
-  .facet_sidebar {
-    display: none;
-  }
   }
 
   
